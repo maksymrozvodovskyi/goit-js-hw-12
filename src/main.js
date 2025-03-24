@@ -94,7 +94,7 @@ async function onLoadMore() {
       });
     }
   } catch (error) {
-    console.log(error);
+    iziToast.error({ message: 'Something went wrong!' });
   } finally {
     resp.loaderEl.classList.add('visually-hidden');
   }
